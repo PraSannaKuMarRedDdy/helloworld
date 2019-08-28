@@ -21,6 +21,19 @@
 
     <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
   </properties>
+  
+  <distributionManagement>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>nexus-snapshots</id>
+			<url>http://10.10.4.124:8081/nexus/content/repositories/test-repo</url>
+		</snapshotRepository>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>nexus-releases</id>
+			<url>http://10.10.4.124:8081/nexus/content/repositories/test-repo-releases/</url>
+		</repository>
+	</distributionManagement>
 
   <build>
     <plugins>
