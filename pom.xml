@@ -22,7 +22,7 @@
     <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
   
         <baseNexusURL>http://13.233.230.62:8081</baseNexusURL>
-        <targetRepositoryID>http://13.233.230.62:8081/repository/devops/</targetRepositoryID>
+        <targetRepositoryID>http://13.233.230.62:8081/repository/devops</targetRepositoryID>
         <package.final.name>devops123</package.final.name>
     </properties>
   
@@ -30,7 +30,7 @@
 		<snapshotRepository>
 			<uniqueVersion>true</uniqueVersion>
 			<id>nexus-snapshots</id>
-			<url>http://10.10.4.124:8081/nexus/content/repositories/test-repo</url>
+			<url>http://13.233.230.62:8081/repository/devops</url>
 		</snapshotRepository>
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
