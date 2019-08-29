@@ -21,9 +21,9 @@
 
     <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
   
-        <baseNexusURL>${baseNexusURL}</baseNexusURL>
-        <targetRepositoryID>${repositoryId}</targetRepositoryID>
-        <package.final.name>${project.artifactId}</package.final.name>
+        <baseNexusURL>http://13.233.230.62:8081</baseNexusURL>
+        <targetRepositoryID>http://13.233.230.62:8081/repository/devops/</targetRepositoryID>
+        <package.final.name>devops123</package.final.name>
     </properties>
   
   <distributionManagement>
