@@ -5,17 +5,17 @@
   <!-- servers   | This is a list of authentication profiles, keyed by the server-id used within the system.   | Authentication profiles can be used whenever maven must make a connection to a remote server.   |-->
   <servers>
     <server>
-      <id>nexus-snapshots</id>
+      <id>devops-snapshots</id>
       <username>admin</username>
       <password>admin123</password>
     </server>
     <server>
-      <id>nexus-releases</id>
+      <id>devops-releases</id>
       <username>admin</username>
       <password>admin123</password>
     </server>
     <server>
-      <id>http://10.10.4.124:8081</id>
+      <id>http://13.233.230.62:808</id>
       <username>admin</username>
       <password>admin123</password>
     </server>    
@@ -26,9 +26,9 @@
       <id>default</id>
       <repositories>
         <repository>
-          <id>nexus.com</id>
-          <name>CSA Maven 2 Repository</name>
-          <url>http://10.10.4.124:8081/nexus/content/repositories/test-repo</url>
+          <id>devops</id>
+          <name>Devops Maven 2 Repository</name>
+          <url>http://13.233.230.62:8081/repository/devops/</url>
           <releases>
             <enabled>false</enabled>
             <updatePolicy>always</updatePolicy>
@@ -46,9 +46,9 @@
   </profiles>
   <mirrors>
     <mirror>
-      <id>nexus.csatp.com-releases</id>
+      <id>nexus-releases</id>
       <name>central</name>
-      <url>https://10.10.4.124:8081/repository/maven-group/</url>
+      <url>http://13.233.230.62:8081/repository/devops-group/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
