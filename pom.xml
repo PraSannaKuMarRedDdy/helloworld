@@ -31,7 +31,7 @@
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
 			<id>nexus-releases</id>
-			<url>http://10.10.4.124:8081/nexus/content/repositories/test-repo-releases/</url>
+			<url>http://13.233.230.62:8081/repository/devops/</url>
 		</repository>
 	</distributionManagement>
 
